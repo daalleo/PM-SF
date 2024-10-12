@@ -41,8 +41,8 @@ def calcular_sortino_ratio(returns, risk_free_rate=0.02, target_return=0):
     return np.sqrt(252) * excess_returns.mean() / downside_deviation if downside_deviation != 0 else np.nan
 
 # Configuración de la página
-st.set_page_config(page_title="Analizador de Portafolio", layout="wide")
-st.sidebar.title("Analizador de Portafolio de Inversión")
+st.set_page_config(page_title="Analizador de Portafolios by Leonardo Da Niel", layout="wide")
+st.sidebar.title("Analizador de Portafolio de Inversión by Leonardo Da Niel")
 
 # Entrada de símbolos y pesos
 simbolos_input = st.sidebar.text_input("Ingrese los símbolos de las acciones separados por comas (por ejemplo: AAPL,GOOGL,MSFT):", "AAPL,GOOGL,MSFT,AMZN,NVDA")
